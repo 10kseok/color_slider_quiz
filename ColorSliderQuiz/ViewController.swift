@@ -48,12 +48,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func sliderChanged(_ sender: Any) {
-        let redValue = CGFloat(redSlider.value)
-        let greenValue = CGFloat(greenSlider.value)
-        let blueValue =  CGFloat(blueSlider.value)
-        let color = UIColor(red: redValue, green: greenValue, blue: blueValue, alpha: 1.0)
-        
-        colorView.backgroundColor = color
+        updateColor()
     }
     
 
